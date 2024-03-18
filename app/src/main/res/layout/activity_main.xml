@@ -24,7 +24,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="408dp"
+        android:layout_marginBottom="384dp"
         android:text="Submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Enter the kg value"
-        android:textSize="20sp"
+        android:textColor="#6200ED"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/editTextText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +63,7 @@
         android:id="@+id/imageView"
         android:layout_width="216dp"
         android:layout_height="287dp"
-        android:background="#FFFFFF"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
@@ -69,4 +71,5 @@
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:layout_constraintVertical_bias="0.603"
         app:srcCompat="@drawable/weight" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
