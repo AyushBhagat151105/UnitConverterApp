@@ -14,11 +14,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button;
-    private TextView textView;
-    private EditText editText;
+
+    Button B1,Reset;
+    TextView textView;
+    EditText editText;
 
 //    private Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            button = findViewById(R.id.button);
+            B1 = findViewById(R.id.B1);
             textView = findViewById(R.id.textView);
             editText = findViewById(R.id.editText);
+            Reset = findViewById(R.id.Reset);
 
-
-            button.setOnClickListener(new View.OnClickListener() {
+            B1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 //                    Toast.makeText(MainActivity.this, "Hi Click listener works", Toast.LENGTH_SHORT).show();
@@ -50,9 +52,17 @@ public class MainActivity extends AppCompatActivity {
 
             });
 
+            Reset.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+//                    Toast.makeText(MainActivity.this, "Hi Click listener works", Toast.LENGTH_SHORT).show();
+                    textView.setText(" ");
+                    editText.setText(" ");
+                }
+
+            });
 
             return insets;
-
 
 
         });
