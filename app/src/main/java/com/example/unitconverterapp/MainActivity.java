@@ -35,17 +35,12 @@ public class MainActivity extends AppCompatActivity {
                     String s = editText.getText().toString();
                     if (s.isEmpty()){
                         Toast.makeText(MainActivity.this, "Enter the value", Toast.LENGTH_SHORT).show();
-                        return;
+
                     }else {
                         int kg = Integer.parseInt(s);
                         double pound = 2.205 * kg;
                         textView.setText("The curresponding value is Pound is " + pound);
                     }
-
-
-
-
-
                 }
             });
 
