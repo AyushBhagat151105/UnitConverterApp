@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             Reset.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-//                    Toast.makeText(MainActivity.this, "Hi Click listener works", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Reseted", Toast.LENGTH_SHORT).show();
                     textView.setText(" ");
                     editText.setText(" ");
                 }
